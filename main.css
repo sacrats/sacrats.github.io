@@ -1,9 +1,11 @@
+/* Manavjot Singh [07/05/2021] */
 * {
   margin: 0;
   padding: 0;
-  --primamry-gap: 5vh;
+  --primary-gap: 0vh;
   --secondary-gap: 3vh;
   --text-padding: 0 3vw;
+  --element-padding: 5vh 0;
 }
 
 body {
@@ -14,7 +16,7 @@ body {
   text-align: center;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: max(3vmin, 17px);
-  gap: var(--primamry-gap);
+  gap: var(--primary-gap);
 }
 
 h1 {
@@ -26,12 +28,22 @@ p {
   padding: var(--text-padding);
 }
 
+.button {
+  text-decoration: none;
+  border: 1px solid;
+  padding: 10px 20px;
+  border-radius: 15px;
+  margin: 10px 20px;
+}
+
 #showcase {
+  color: darkslategray;
   display: flex;
   flex-direction:  column;
   align-items: center;
   text-align: center;
   gap: var(--secondary-gap);
+  padding: var(--element-padding);
 }
 
 #showcase #logo{
@@ -39,40 +51,74 @@ height: 50vw;
 max-height: 300px;
 }
 
- .button {
-  text-decoration: none;
+#showcase .button {
   color: darkslategray;
-  border: darkslategray 2px solid;
-  padding: 10px 20px;
-  border-radius: 15px;
+  border: darkslategray 1px solid;
 }
 
-.button:hover {
-  background:darkslategray;
+#showcase .button:hover {
+  background-color: darkslategray;
   color: white;
+}
+
+@media only screen and (min-width: 600px) {
+  .info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  section {
+    width: 50vw;
+  }
 }
 
 section {
   display: flex;
-  flex-direction:  column;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: teal;
-  color: white;
-  width: 100vw;
-  padding: 10vmin 0;
+  padding: var(--element-padding);
   gap: var(--secondary-gap);
 }
 
-section .button {
-  text-decoration: none;
+#section_a {
+  background-color: teal;
   color: white;
-  border: white 2px solid;
-  padding: 10px 20px;
-  border-radius: 15px;
 }
 
-section .button:hover {
+#section_a .button {
+  color: white;
+  border: white 1px solid;
+}
+
+#section_a .button:hover {
   background:white;
   color: teal;
+}
+
+#section_b {
+  background-color: darkslategray;
+  color: white;
+}
+
+#section_b .button {
+  color: white;
+  border: white 1px solid;
+}
+
+#section_b .button:hover {
+  background:white;
+  color: darkslategray;
+}
+
+#section_about .button {
+  color: darkslategray;
+  border: darkslategray 1px solid;
+}
+
+#section_about .button:hover {
+  background-color: darkslategray;
+  color: white;
 }
