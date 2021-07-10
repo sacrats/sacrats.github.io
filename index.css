@@ -42,7 +42,6 @@ nav {
   position: absolute;
   left: 20px;
   top: 20px;
-
 }
 
 #burger {
@@ -68,13 +67,14 @@ nav {
 }
 
 nav #pages {
+  top: 50px;
   margin-top: 1vh;
   list-style: none;
   display: none;
   position: absolute;
   flex-direction: column;
   font-weight: bold;
-  top: 50px;
+
 }
 
 nav #pages li {
@@ -84,9 +84,11 @@ nav #pages li {
   border-radius: 15px;
   width: max-content;
   background-color: white;
+  font-size: max(3vmin, 17px);
 }
 
 nav #pages a {
+  font-size: inherit;
   text-decoration: none;
   color: darkslategray;
 }
