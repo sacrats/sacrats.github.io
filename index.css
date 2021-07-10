@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   --primary-gap: 0vh;
   --secondary-gap: 3vh;
   --text-padding: 0 3vw;
@@ -35,6 +36,63 @@ p {
   border-radius: 15px;
   margin: 10px 20px;
 }
+
+nav {
+  margin: 0;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+#burger {
+  font-size: 40px;
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+  display: block;
+  background: none;
+  border: none;
+  border-radius: 60px;
+}
+
+#close_btn {
+  font-size: 40px;
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+  display: none;
+  background: none;
+  border-radius: 60px;
+  border: none;
+}
+
+nav #pages {
+  top: 50px;
+  margin-top: 1vh;
+  list-style: none;
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  font-weight: bold;
+
+}
+
+nav #pages li {
+  margin: 1vh 0px;
+  padding: 10px 20px;
+  border: darkslategray 1px solid;
+  border-radius: 15px;
+  width: max-content;
+  background-color: white;
+  font-size: max(3vmin, 17px);
+}
+
+nav #pages a {
+  font-size: inherit;
+  text-decoration: none;
+  color: darkslategray;
+}
+
 
 #showcase {
   color: darkslategray;
