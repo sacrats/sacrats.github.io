@@ -1,7 +1,9 @@
-var burger = document.getElementById("burger");
-var close_btn = document.getElementById("close_btn");
-var pages = document.getElementById("pages");
-var navOpen = false;
+// Manavjot Singh [07/05/2021]
+
+burger = document.getElementById("burger");
+close_btn = document.getElementById("close_btn");
+pages = document.getElementById("pages");
+
 
 function ShowNav() {
   burger.style.display = "none";
@@ -14,5 +16,7 @@ function HideNav() {
   close_btn.style.display = "none";
   pages.style.display = "none";
 }
+
+
 burger.addEventListener("click", ShowNav);
 close_btn.addEventListener("click", HideNav);
