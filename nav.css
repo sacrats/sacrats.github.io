@@ -2,10 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    --primary-gap: 0vh;
-    --secondary-gap: 3vh;
-    --text-padding: 0 3vw;
-    --element-padding: 5vh 0;
 }
 
 nav {
