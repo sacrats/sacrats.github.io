@@ -54,7 +54,7 @@ nav #pages {
 
 nav #pages li {
     margin: 1vh 0px;
-    padding: 10px 20px;
+    padding: 10px 0px;
     border: darkslategray 2px dotted;
     border-radius: 15px;
     width: max-content;
@@ -76,6 +76,8 @@ nav #pages li:active {
 }
 
 nav #pages a {
+    padding: 10px 10px;
+    border-radius: 15px;
     font-size: inherit;
     text-decoration: none;
     color: inherit;
