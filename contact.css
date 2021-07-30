@@ -15,6 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: max(3vmin, 17px);
     gap: var(--primary-gap);
@@ -24,6 +25,10 @@ h1 {
     padding: var(--text-padding);
 }
 
+h3 {
+    font-size: max(4vmin, 20px);
+}
+
 p {
     line-height: 1.5;
     padding: var(--text-padding);
@@ -31,18 +36,18 @@ p {
 
 .button {
     text-decoration: none;
-    border: 1px darkslategray solid;
+    border: 1px white solid;
     padding: 10px 20px;
     border-radius: 15px;
-    margin: 10px 20px;
+    color: white;
 }
 
 #showcase {
     color: darkslategray;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    text-align: center;
     gap: var(--secondary-gap);
     padding: var(--element-padding);
 }
@@ -50,4 +55,30 @@ p {
 #showcase #logo {
     height: 50vw;
     max-height: 300px;
+}
+
+.contacts ul {
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+}
+
+.contacts li {
+    display: flex;
+    background-color: teal;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    border: 2vh solid white;
+    border-radius: 50px;
+    padding: 2vh 1vw;
+    margin: 0 20vw;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .contacts li {
+        flex-direction: column;
+        gap: 1vh;
+    }
 }
