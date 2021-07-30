@@ -58,9 +58,9 @@ p {
 }
 
 .contacts ul {
-display: flex;
-flex-wrap: wrap;
-flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .contacts li {
@@ -74,6 +74,17 @@ flex-direction: row;
     padding: 2vh 1vw;
     margin: 0 20vw;
     width: 100%;
+}
+
+.button:hover {
+    background: white;
+    color: teal;
+}
+
+.button:active {
+    color: darkslategray;
+    border: white 1px solid;
+    background: white;
 }
 
 @media only screen and (max-width: 1000px) {
