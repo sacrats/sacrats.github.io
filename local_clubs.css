@@ -1,0 +1,62 @@
+/* Manavjot Singh [07/05/2021] */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --primary-gap: 0vh;
+    --secondary-gap: 3vh;
+    --text-padding: 0 3vw;
+    --element-padding: 5vh 0;
+  }
+  
+  body {
+    background-image: url(images/background_aircraftparts.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: max(3vmin, 17px);
+    gap: var(--primary-gap);
+  }
+  
+  h1 {
+    padding: var(--text-padding);
+  }
+  
+  p {
+    line-height: 1.5;
+    padding: var(--text-padding);
+  }
+  
+  .button {
+    text-decoration: none;
+    border: 1px darkslategray solid;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin: 10px 20px;
+  }
+  
+  #showcase {
+    color: darkslategray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--secondary-gap);
+    padding: var(--element-padding);
+  }
+  
+  #clubs_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  #clubs_list div {
+    text-align: center;
+    color: darkslategray;
+    padding: 2vh 2vw;
+  }
+  
+  
