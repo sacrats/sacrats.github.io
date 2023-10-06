@@ -46,7 +46,7 @@ p {
     color: darkslategray;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: var(--secondary-gap);
     padding: var(--element-padding);
@@ -66,12 +66,12 @@ p {
 .contacts li {
     display: flex;
     background-color: teal;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     color: white;
     border: 2vh solid white;
     border-radius: 50px;
-    padding: 2vh 1vw;
+    padding: 2vh 50px;
     margin: 0 20vw;
     width: 100%;
 }
